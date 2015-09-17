@@ -20,13 +20,13 @@ public class Lab2 {
 
 	int menGoing = 2;
 
-	int numWives = 7;
+	int numWives = 7, totalWives = 7;
 
-	int numSacksPerWife = 7;
+	int numSacksPerWife = 7, totalSacks = 7;
 	
-	int numCatsPerSack = 7;
+	int numCatsPerSack = 7, totalCats = 7;
 
-	int numKitsPerCat = 7;
+	int numKitsPerCat = 7, totalKits = 7;
 
 	int total = 0;
 
@@ -42,19 +42,19 @@ public class Lab2 {
 	    // Calculate the number going to St. Ives
 		System.out.println("There are " + menGoing + " men going to St. Ives." + "\n");
 
-		System.out.println("There are " + numWives + " wives going to St. Ives." + "\n");
+		System.out.println("There are " + totalWives + " wives going to St. Ives." + "\n");
 
-		numSacksPerWife = numWives * numSacksPerWife;
-		System.out.println("There are " + numSacksPerWife + " sacks with each of the wives, going to St. Ives." + "\n");
+		totalSacks = numWives * numSacksPerWife;
+		System.out.println("There are " + totalSacks + " sacks, of which 7 are with each of the wives, going to St. Ives." + "\n");
 
-		numCatsPerSack = numWives * numSacksPerWife * numCatsPerSack;
-		System.out.println("There are " + numCatsPerSack + " cats in each of the sacks, that are with each of the wives," + "\n" + " going to St. Ives." + "\n");
+		totalCats = numWives * numSacksPerWife * numCatsPerSack;
+		System.out.println("There are " + totalCats + " cats, of which 7 are with each of the wives," + "\n" + " going to St. Ives." + "\n");
 
-		numKitsPerCat = numWives * numSacksPerWife * numCatsPerSack * numKitsPerCat;
-		System.out.println("There are " + numKitsPerCat + " kits per cat, which are in each of the sacks, " + "\n" + 
+		totalKits = numWives * numSacksPerWife * numCatsPerSack * numKitsPerCat;
+		System.out.println("There are " + totalKits + " kits, in which 7 are in each of the sacks, " + "\n" + 
 			"that are with each of the wives, who are going to St. Ives." + "\n");
 
-		total = menGoing + numWives + numSacksPerWife + numCatsPerSack + numKitsPerCat;
+		total = menGoing + totalWives + totalSacks + totalCats + totalKits;
 		System.out.println("There are " + total + " total entities going to St. Ives.");
 
 	} else {
