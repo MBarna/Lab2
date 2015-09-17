@@ -9,7 +9,6 @@ public class Lab2 {
 	System.out.println("Each cat had seven kits");
 	System.out.println("Kittens, cats, sacks, wives");
 	System.out.println("How many were going to St. Ives?");
-	int total = 0;
 	
 	// 1. Each of the following variable declarations has something
 	// wrong with it.  Uncomment the line and fix it.  If your code
@@ -17,17 +16,17 @@ public class Lab2 {
 	// Assume that the original man is also going to St. Ives, so
 	// the boolean variable manGoingToStIves should be true.
 	
-	boolean manGoingToStIves = !true;
+	boolean manGoingToStIves = true;
 
-	// short numWives = 8;
+	int numWives = 7;
 
-	// int numSacksPerWife = (double) 7;
+	double numSacksPerWife = 7;
 	
-	// int numCatsPerSack = 7.0;
+	double numCatsPerSack = 7;
 
-	// int numKitsPerCat = (long) 7;
+	double numKitsPerCat = 7;
 
-	// byte total;
+	int total = 0;
 
 	// If the original man is going to St. Ives, then all are going
 	// the narrator, original man, kitten, cats, sacks, wives.
