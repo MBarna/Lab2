@@ -8,7 +8,7 @@ public class Lab2 {
 	System.out.println("Each sack had seven cats");
 	System.out.println("Each cat had seven kits");
 	System.out.println("Kittens, cats, sacks, wives");
-	System.out.println("How many were going to St. Ives?");
+	System.out.println("How many were going to St. Ives?" + "\n" + "\n");
 	
 	// 1. Each of the following variable declarations has something
 	// wrong with it.  Uncomment the line and fix it.  If your code
@@ -18,13 +18,15 @@ public class Lab2 {
 	
 	boolean manGoingToStIves = true;
 
+	int menGoing = 2;
+
 	int numWives = 7;
 
-	double numSacksPerWife = 7;
+	int numSacksPerWife = 7;
 	
-	double numCatsPerSack = 7;
+	int numCatsPerSack = 7;
 
-	double numKitsPerCat = 7;
+	int numKitsPerCat = 7;
 
 	int total = 0;
 
@@ -38,7 +40,23 @@ public class Lab2 {
 	    // all of the wives, sacks, cats, and kittens are as well, along
 	    // with the narrator.
 	    // Calculate the number going to St. Ives
-	    total = -1;
+		System.out.println("There are " + menGoing + " men going to St. Ives." + "\n");
+
+		System.out.println("There are " + numWives + " wives going to St. Ives." + "\n");
+
+		numSacksPerWife = numWives * numSacksPerWife;
+		System.out.println("There are " + numSacksPerWife + " sacks with each of the wives, going to St. Ives." + "\n");
+
+		numCatsPerSack = numWives * numSacksPerWife * numCatsPerSack;
+		System.out.println("There are " + numCatsPerSack + " cats in each of the sacks, that are with each of the wives," + "\n" + " going to St. Ives." + "\n");
+
+		numKitsPerCat = numWives * numSacksPerWife * numCatsPerSack * numKitsPerCat;
+		System.out.println("There are " + numKitsPerCat + " kits per cat, which are in each of the sacks, " + "\n" + 
+			"that are with each of the wives, who are going to St. Ives." + "\n");
+
+		total = menGoing + numWives + numSacksPerWife + numCatsPerSack + numKitsPerCat;
+		System.out.println("There are " + total + " total entities going to St. Ives.");
+
 	} else {
 	    // Otherwise, only the narrator is going!
 	    total = 1;
