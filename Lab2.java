@@ -2,6 +2,7 @@ public class Lab2 {
     
     public static void main(String[] args) {
 
+    //Initial println statements
 	System.out.println("As I was going to St. Ives");
 	System.out.println("I met a man with seven wives");
 	System.out.println("Each wife had seven sacks");
@@ -16,6 +17,7 @@ public class Lab2 {
 	// Assume that the original man is also going to St. Ives, so
 	// the boolean variable manGoingToStIves should be true.
 	
+	//Declared variables
 	boolean manGoingToStIves = true;
 
 	int menGoing = 2;
@@ -40,20 +42,27 @@ public class Lab2 {
 	    // all of the wives, sacks, cats, and kittens are as well, along
 	    // with the narrator.
 	    // Calculate the number going to St. Ives
+
+	    //Number of men going to St. Ives
 		System.out.println("There are " + menGoing + " men going to St. Ives." + "\n");
 
+		//Number of wives going to St. Ives
 		System.out.println("There are " + totalWives + " wives going to St. Ives." + "\n");
 
+		//Calculation for total number of sacks and a println to display totalSacks
 		totalSacks = numWives * numSacksPerWife;
 		System.out.println("There are " + totalSacks + " sacks, of which 7 are with each of the wives, going to St. Ives." + "\n");
 
+		//Calculation for total number of cats and a println to display totalCats
 		totalCats = numWives * numSacksPerWife * numCatsPerSack;
 		System.out.println("There are " + totalCats + " cats, of which 7 are with each of the wives," + "\n" + " going to St. Ives." + "\n");
 
+		//Calculation for total number of kits and a println to display totalKits
 		totalKits = numWives * numSacksPerWife * numCatsPerSack * numKitsPerCat;
 		System.out.println("There are " + totalKits + " kits, in which 7 are in each of the sacks, " + "\n" + 
 			"that are with each of the wives, who are going to St. Ives." + "\n");
 
+		//Calculation to find the total number of entities and println to display it
 		total = menGoing + totalWives + totalSacks + totalCats + totalKits;
 		System.out.println("There are " + total + " total entities going to St. Ives.");
 
